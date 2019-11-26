@@ -1,4 +1,4 @@
-import { portion, flow, popEvent } from '@barajs/core'
+import { portion } from '@barajs/core'
 import nodemailer from 'nodemailer'
 
 import { NodeMailerContext, NodeMailerMold, BARA_NODEMAILER } from './types'
@@ -18,9 +18,6 @@ const BaraNodeMailer = portion<any, NodeMailerContext, NodeMailerMold>({
   },
 })
 
-const { whenInitialized: whenNodeMailerReady } = popEvent(BaraNodeMailer)
-
-export { BaraNodeMailer, whenNodeMailerReady }
-
 export * from './formula'
 export default BaraNodeMailer
+export { BaraNodeMailer }
