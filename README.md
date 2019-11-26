@@ -1,9 +1,9 @@
-# Bara with RxDB integration
+# Bara with NodeMailer integration
 
-Bara makes it able to setup and run the PouchDB application in a minute.
+Bara makes it able to setup and run the NodeMailer application in a minute.
 
 ## Install
 
 ```
-npm install --save @barajs/core @barajs/rxdb
+npm install --save @barajs/core @barajs/nodemailer
 ```
