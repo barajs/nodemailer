@@ -25,8 +25,8 @@
     "precompile": "yarn format"
   },
   "dependencies": {
-    "@barajs/core": "3.0.0-alpha.427",
-    "@barajs/formula": "3.0.0-alpha.470",
+    "@barajs/core": "^3.0.0-alpha.427",
+    "@barajs/formula": "^3.0.0-alpha.470",
     "nodemailer": "6.3.1"
   },
   "devDependencies": {
@@ -37,7 +37,7 @@
     "@semantic-release/npm": "6.0.0-beta.4",
     "@types/nodemailer": "6.2.2",
     "prettier": "1.18.2",
-    "semantic-release": "15.13.28",
+    "semantic-release": "16.0.0-beta.36",
     "ts-loader": "6.2.1",
     "ts-node-dev": "1.0.0-pre.43",
     "typescript": "3.6.4",
