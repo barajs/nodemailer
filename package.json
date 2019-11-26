@@ -1,0 +1,47 @@
+{
+  "name": "@barajs/nodemailer",
+  "version": "1.0.1",
+  "description": "Bara nodemailer integration module",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:barajs/nodemailer.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsnd --debounce 3000 --respawn server.ts",
+    "compile": "yarn compile:tsc",
+    "compile:tsc": "rm -rf dist && tsc -b",
+    "compile:webpack": "webpack --mode=production",
+    "format": "prettier --write '{.,src/**}/*.{js,jsx,ts,tsx}'",
+    "semantic-release": "semantic-release",
+    "precompile": "yarn format"
+  },
+  "dependencies": {
+    "@barajs/core": "3.0.0-alpha.427",
+    "@barajs/formula": "3.0.0-alpha.470",
+    "nodemailer": "6.3.1"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "3.0.5",
+    "@semantic-release/commit-analyzer": "7.0.0-beta.6",
+    "@semantic-release/git": "7.1.0-beta.9",
+    "@semantic-release/github": "5.6.0-beta.4",
+    "@semantic-release/npm": "6.0.0-beta.4",
+    "@types/nodemailer": "6.2.2",
+    "prettier": "1.18.2",
+    "semantic-release": "15.13.28",
+    "ts-loader": "6.2.1",
+    "ts-node-dev": "1.0.0-pre.43",
+    "typescript": "3.6.4",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.9"
+  }
+}
