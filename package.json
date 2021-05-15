@@ -27,7 +27,7 @@
   "dependencies": {
     "@barajs/core": "^3.0.0-alpha.427",
     "@barajs/formula": "^3.0.0-alpha.470",
-    "nodemailer": "6.3.1"
+    "nodemailer": "6.4.16"
   },
   "devDependencies": {
     "@semantic-release/changelog": "3.0.5",
